@@ -44,7 +44,34 @@ public class GlassPaneSample {
         //1. panel setVisible true
         //2. add mouse listener to panel
         //3. e.consume
-        
+        panel.setVisible(true);
+        panel.addMouseListener(new MouseListener(){
+        @Override
+            public void mousePressed(MouseEvent e) {
+                e.consume();
+               
+            }
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+    });
         
         ////////////////////////////////
         
